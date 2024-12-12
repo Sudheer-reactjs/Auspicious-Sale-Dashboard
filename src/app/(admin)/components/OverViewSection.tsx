@@ -21,12 +21,12 @@ export default function OverviewSection() {
 
   return (
     <div className="p-3 md:p-7 bg-white rounded-2xl flex items-center flex-col justify-between">
-      <div className="w-full flex items-center justify-between gap-4 mb-50 flex-wrap ">
+      <div className="w-full flex items-center justify-between gap-4 mb-10 flex-wrap ">
         <h3 className="text-lg font-semibold">Overview</h3>
          {/* Date Picker Filters */}
         <div className="flex items-center gap-4 max-w-[300px]">
           <LocalizationProvider dateAdapter={AdapterDayjs}>
-             {/* Month Picker */}
+             {/* Month Picker */}  
              <DatePicker
               label="Month"
               openTo="month"
