@@ -53,7 +53,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-        <div className="flex items-center justify-center gap-[50px] ">
+        <div className="flex items-center justify-center gap-[15px] md:gap-[50px] ">
           <StatisticsChart />
           <div>
             <div className="flex flex-col gap-2 mb-[20px]">
