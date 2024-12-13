@@ -1,10 +1,10 @@
 import React from 'react'
-import AllLeads from '../components/AllLeads'
+import AddNewLead from '../components/AddNewLead'
 
 export default function page() {
   return (
     <>
-        <AllLeads />
+      <AddNewLead /> 
     </>
   )
 }

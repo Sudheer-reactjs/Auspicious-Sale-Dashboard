@@ -21,7 +21,7 @@ interface Project {
 
 }
 
-const RecentLeads: React.FC = () => {
+const AllLeads: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([
     {
       _id: "1",
@@ -54,21 +54,20 @@ const RecentLeads: React.FC = () => {
       notes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in",  
     },
     {
-      _id: "3",
-      clienttName: "Marcus Septimus",
-      bidderName: "Simran",
-      platform: "Upwork",
-      tech: "Web Development",
-      contractType: "Hourly",
-      emailAddress: "alfonso@dummymail.com",   
-      phoneNumber: "+1 (555) 345-6789", 
-      status: "Hired",
-      dateOflead: "24 July 2024",
-      NoHours: "40",
-      NoRate: "30",
-      notes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in",  
-    },
-    
+        _id: "3",
+        clienttName: "Marcus Septimus",
+        bidderName: "Simran",
+        platform: "Upwork",
+        tech: "Web Development",
+        contractType: "Hourly",
+        emailAddress: "alfonso@dummymail.com",   
+        phoneNumber: "+1 (555) 345-6789", 
+        status: "Hired",
+        dateOflead: "24 July 2024",
+        NoHours: "40",
+        NoRate: "30",
+        notes: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in",  
+      },
   ]);
 
   const [currentPage, setCurrentPage] = useState(0);
@@ -273,4 +272,4 @@ const RecentLeads: React.FC = () => {
   );
 };
 
-export default RecentLeads;
+export default AllLeads;

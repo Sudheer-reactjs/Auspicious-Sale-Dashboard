@@ -7,7 +7,7 @@ export default function Dashboard() {
     <> 
        <OverviewSection />
        <MultiRingDonutChart />
-        <RecentLeads />
+       <RecentLeads />
     </>
   )
 }

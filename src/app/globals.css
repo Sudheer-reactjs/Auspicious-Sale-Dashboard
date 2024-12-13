@@ -53,17 +53,15 @@ input:-moz-placeholder { /* Firefox 18- */
   height: 50px;
 }
 .button {
-  color: #FFF;
-  font-size: 14px;
   line-height: normal;
-  border-radius: 49px;
+  border-radius: 24px;
   background: #5D5FEF;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 30px;
-  height: 55px;
+  font-size: 14px;
+  color: #fff;
+  padding: 7px 20px 7px 7px;
+  grid-gap: 10px;
 }
 .section-title {
 color: #353E6C;
@@ -109,30 +107,32 @@ button:disabled {
 } 
 
 th, td {
-  padding: 15px 20px;
-  color: #8B8E98;
-  
+  padding: 10px;
+  color: #1C2329;
   white-space: nowrap;
+  font-size: 12px;
+  border-radius: 10px;
+  font-family: var(--font-RalewayMedium);
 }
 .table-common {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  border-radius: 30px;
 }
 .table-common table {
   width: 100%;
   min-width: 800px;
   background: #ffffff;
 }
-.table-common table tbody tr:nth-child(odd) {
-  background: #F3F6FF;
+.table-common table tbody tr:nth-child(even) {
+  background: #F5FAFF;
+  border-radius: 10px;
 }
 .table-common table thead tr th {
-  color: #3B3F88;
+  color: #7F7F8A;
   font-weight: normal;
   text-align: left;
-  font-size: 16px;
-  padding: 30px 20px 17px;
+  font-size: 12px;
+  padding: 10px 10px 10px;
 }
 .overflo-custom::-webkit-scrollbar-track {
   background-color: #ffffff;
@@ -163,7 +163,7 @@ th, td {
   margin: 0 0 5px;
 }
 textarea {
-  height: 75px;
+  min-height: 105px;
 }
 .fomm-wrapper input, .fomm-wrapper select, .fomm-wrapper textarea {
   border-radius: 10px;
@@ -172,6 +172,8 @@ textarea {
   width: 100%;
   padding: 12px 15px;
   color: #707070;
+  font-size: 14px;
+  height: 50px;
 }
 .progress-line::after {
   content: "";
@@ -229,6 +231,79 @@ box-shadow: 0px 0px 10px 0px rgba(22, 87, 255, 0.10);
 .project-card:nth-child(odd) .progress-step svg circle {
 fill: #F3F6FF;
 }
+a.button-all {
+  border-radius: 24px;
+  background: #5D5FEF;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+  padding: 7px 20px 7px 7px;
+  grid-gap: 10px;
+}
+.table-common thead {
+  border-bottom: dashed 1px #E4EEF4;
+}
+.modal-header h2 {
+  color: #5D5FEF;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 50.4px */
+  text-transform: capitalize;
+}
+
+.modal-header p {
+  color: #7F7F8A;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 19.6px */
+  text-transform: capitalize;
+}
+
+.modal-header  h3 {
+  color: #151d48;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 28px */
+  text-transform: capitalize;
+}
+
+.modal-header {
+  border-bottom: dashed 1px #D7D7D7;
+  padding-bottom: 20px;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 25px;
+} 
+.detail-card p {
+  color: #7F7F8A;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.detail-card h3 {
+  color: var(--Greys-Blue-Grey-900, #151D48);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+h2.section-projectName {
+  font-size: 20px;
+  margin-bottom: 0px;
+  line-height: 24px;
+}
 @media (min-width: 989px) {
 }
 @media screen and (max-width: 1023px) {
@@ -264,7 +339,7 @@ fill: #F3F6FF;
     color: #283C63;
   }
   .nav_logo a.nav-logo-link svg {
-    max-width: 190px;
+    max-width: 190px; 
 }
 .nav-menu {
   display: none;
@@ -319,10 +394,23 @@ fill: #F3F6FF;
   width: 40px;
   height: 40px;
 }
-th, td {
-  padding: 10px 15px;
+.modal-header p, .modal-header h3 {
+  text-align: left;
 }
-
-
-
+.modal-header h2 {
+  font-size: 26px;
+}
+.modal-header  h3 {
+  font-size: 18px;
+}
+.grid-box {
+  grid-template-columns: 1fr;
+  margin-bottom: 0.75rem;
+}
+.detail-card p {
+  margin-bottom: 5px;
+} 
+.detail-card h3 {
+  font-size: 14px; 
+}
 }
