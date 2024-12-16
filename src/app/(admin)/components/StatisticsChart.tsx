@@ -52,7 +52,7 @@ const StatisticsChart: React.FC = () => {
     <div className="relative flex justify-center items-center max-w-[150px] border-solid border-[6px] border-[#5D5FEF] rounded-full">
       <div className="absolute text-center">
         <p className="text-[30px] font-bold text-[#5D5FEF] font-RalewayRegular">240</p>
-        <p className="text-[12px] text-[#1C2329]">Total Bids</p>
+        <p className="text-[12px] text-[#1C2329] font-RalewaySemiBold">Total Bids</p>
       </div>
       <Doughnut data={data} options={options} />
     </div>

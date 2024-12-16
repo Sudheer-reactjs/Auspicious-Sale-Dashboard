@@ -31,15 +31,12 @@ const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (event) => {
     event.preventDefault();
   
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // const phoneRegex = /^\+45\s?\d{2}(\s?\d{2}){3}$/;
-    const phoneRegex = /^\d{8}$/;
     let loginFieldType = '';
+    
     if (emailRegex.test(username)) {
       loginFieldType = 'username';
-    } else if (phoneRegex.test(username)) {
-      loginFieldType = 'username';
     } else {
-      toast.error('Please enter a valid email or Danish phone number (+45).');
+      toast.error('Please enter a valid email address.');
       return;
     }
   

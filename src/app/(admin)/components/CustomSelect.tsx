@@ -36,7 +36,7 @@ const customStyles: StylesConfig<any, true> = {
   placeholder: (styles: any) => ({
     ...styles,
     color: "#6B6B6B", // Placeholder color
-    fontSize: "14px",
+    fontSize: "12px",
   }),
   input: (styles: any) => ({
     ...styles,

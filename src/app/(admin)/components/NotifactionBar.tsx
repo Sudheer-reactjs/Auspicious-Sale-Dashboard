@@ -22,7 +22,7 @@ export default function NotificationBar() {
             <UserIcon />
           </div>
           <div className="hidden md:block">
-            <h6 className="text-[#292D32] text-[14px] font-RalewayRegular">
+            <h6 className="text-[#292D32] text-[14px] font-RalewayMedium">
               Auspicioussoft
             </h6>
             <p className="text-[rgba(41,45,50,0.44)] text-[12px]">
@@ -39,7 +39,7 @@ export default function NotificationBar() {
           <div className="text-right absolute z-[2] top-[50px] right-0 w-[200px] h-auto bg-white p-3 rounded-lg shadow-[0_4px_4px_0_rgba(0,0,0,0.08)]">
             <button
               onClick={() => signOut({ callbackUrl: "/" })}
-              className="button cursor-pointer text-sm bg-[#E87223]  !py-2 !px-2 !bg-transparent !text-[#000]"
+              className="button cursor-pointer font-RalewayMedium text-sm bg-[#E87223]  !py-2 !px-2 !bg-transparent !text-[#000]"
             >
               Log Out
             </button>

@@ -107,7 +107,7 @@ const AllLeads: React.FC = () => {
     <>
       <div className="p-3 md:p-7 bg-white rounded-2xl flex items-center flex-col justify-between">
         <div className="w-full flex items-center justify-between gap-4 mb-6 flex-wrap">
-          <h3 className="text-lg font-semibold">Recent Leads</h3> 
+          <h3 className="text-lg font-semibold">All Leads</h3> 
           <a className="button-all" href="/record-new-lead"><ButtonIcon /> Record New Lead</a>
         </div>
 
@@ -136,7 +136,7 @@ const AllLeads: React.FC = () => {
                     <td>{row.platform}</td>
                     <td>{row.tech}</td>
                     <td>{row.contractType}</td>
-                    <td>{row.emailAddress}</td>
+                    <td>{row.emailAddress}</td> 
                     <td>
                       <select
                         value={row.status}

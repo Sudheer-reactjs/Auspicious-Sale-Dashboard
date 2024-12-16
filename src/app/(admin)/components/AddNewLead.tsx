@@ -47,7 +47,6 @@ const AddNewLead:React.FC = () => {
     projectstartDate: "",
     projectendDate: "",
     assignCustomer: "",
-    // associates: "",
     description: "",
     noHours: "",
     costHours: "",
@@ -125,7 +124,7 @@ const AddNewLead:React.FC = () => {
         <div className="">
         <form onSubmit={handleSubmit} className="fomm-wrapper">
           <div className="grid md:flex flex-wrap gap-[20px] relative bg-white rounded-[20px] mb-[20px] md:rounded-[20px] w-full py-[20px] px-[15px] md:px-[28px]">
-          <h2 className="section-projectName w-full">Record a new lead</h2>
+          <h2 className="section-projectName w-full font-RalewaySemiBold">Record a new lead</h2>
             <div className="md:w-[calc(66.66%-10px)]">
               <label className="block">Name of client</label>
               <input
@@ -196,7 +195,7 @@ const AddNewLead:React.FC = () => {
           </div>
 
           <div className="grid md:flex flex-wrap gap-[20px] relative bg-white rounded-[20px] mb-[20px] md:rounded-[20px] w-full py-[20px] px-[15px] md:px-[28px]">
-            <h2 className="section-projectName w-full">Cost Details</h2>
+            <h2 className="section-projectName w-full font-RalewaySemiBold">Cost Details</h2>
             <div className="md:w-[calc(33.33%-15px)]">
                 <label className="block">Contract Type</label>
                 <CustomSelect
@@ -229,7 +228,7 @@ const AddNewLead:React.FC = () => {
           </div>
 
           <div className="grid md:flex flex-wrap gap-[20px] relative bg-white rounded-[20px] mb-[20px] md:rounded-[20px] w-full py-[20px] px-[15px] md:px-[28px]">
-            <h2 className="section-projectName w-full">Client details</h2>
+            <h2 className="section-projectName w-full font-RalewaySemiBold">Client details</h2>
             <div className="md:w-[calc(33.333%-15px)]">
               <label className="block">Phone Number</label>
               <input
